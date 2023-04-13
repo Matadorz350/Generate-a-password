@@ -9,11 +9,9 @@ function generator() {
   let stringTwo = "";
   for(let i = 0; i < 15; i++) {
     let randomNumber = Math.floor(Math.random() * characters.length);
+    let randomNumberTwo = Math.floor(Math.random() * characters.length);
     stringOne += characters[randomNumber];
-  }
-  for(let i = 0; i < 15; i++) {
-    let randomNumber = Math.floor(Math.random() * characters.length);
-    stringTwo += characters[randomNumber];
+    stringTwo += characters[randomNumberTwo];
   }
   passwordOne.textContent = stringOne;
   passwordTwo.textContent = stringTwo;

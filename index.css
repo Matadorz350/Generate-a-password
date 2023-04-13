@@ -31,6 +31,10 @@ p {
     color: #D5D4D8;
 }
 
+button {
+    display: block;
+}
+
 #btn-el {
     background-color: #4ADF86;
     color: #fff;

@@ -15,6 +15,25 @@
         <section id="main">
             <h1>Generate a </br><span class="green">random password</span></h1>
             <p>Never use an insecure password again</p>
+
+            <label for="amount-el">Choose number from 4 to 12 for your password</label>
+            <select id="amount-el" name="amount-el" onchange="changeNum()">
+                <option>Num</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <label for="symbol-el" class="check">Include symbols?
+                <input type="checkbox" id="symbol-el" onchange="includSym()">
+            </label>
+
             <button id="btn-el" onclick="generator()">Generate password</button>
             <div class="btn">
                 <div id="password-one" class="window green">Password one</div>
